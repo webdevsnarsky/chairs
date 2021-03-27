@@ -26,7 +26,20 @@ body {
 .container {
     margin: 0 auto;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1160px;
+    padding: 0 30px;
+}
+
+.button {
+    padding: 12px 26px;
+    border-radius: 40px;
+    outline: none;
+    cursor: pointer;
+    transition: color .5s ease, background-color .5s ease;
+    -webkit-transition: color .5s ease, background-color .5s ease;
+    -moz-transition: color .5s ease, background-color .5s ease;
+    -ms-transition: color .5s ease, background-color .5s ease;
+    -o-transition: color .5s ease, background-color .5s ease;
 }
 
 /* HEADER */
@@ -118,20 +131,13 @@ body {
     color: var(--elem-bg-color);
 }
 
-.call-back {
-    padding: 12px 26px;
+.call-back__button {
     background-color: var(--white-bg-color);
     color: var(--black-color);
     border: 2px solid var(--elem-bg-color);
-    border-radius: 40px;
-    transition: color .5s ease, background-color .5s ease;
-    -webkit-transition: color .5s ease, background-color .5s ease;
-    -moz-transition: color .5s ease, background-color .5s ease;
-    -ms-transition: color .5s ease, background-color .5s ease;
-    -o-transition: color .5s ease, background-color .5s ease;
 }
 
-.call-back:hover {
+.call-back__button:hover {
     cursor: pointer;
     color: var(--white-bg-color);
     background-color: var(--elem-bg-color);
@@ -174,6 +180,40 @@ body {
 
 main {
     flex-grow: 1;
+}
+
+.sale {
+    background: center / cover no-repeat url('../assets/images/chair-bg.jpg');
+}
+
+.sale-wrap {
+    padding: 192px 0;
+}
+
+.sale__title {
+    font-size: 48px;
+    color: var(--white-bg-color);
+    margin-bottom: 50px;
+}
+
+.sale__descr {
+    max-width: 308px;
+    font-size: 14px;
+    color: var(--white-bg-color);
+    margin-bottom: 50px;
+}
+
+.sale__button {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: var(--white-bg-color);
+    border: 2px solid var(--white-bg-color);
+    background-color: var(--elem-bg-color);
+}
+
+.sale__button:hover {
+    color: var(--elem-bg-color);
+    background-color: var(--white-bg-color);
 }
 
 /* FOOTER */
